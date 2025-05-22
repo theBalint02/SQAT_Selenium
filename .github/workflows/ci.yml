@@ -23,6 +23,14 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Wait for Selenium to start
+        run: |
+          echo "Waiting for Selenium to be ready..."
+          for i in {1..30}; do
+            curl -s http://selenium:4444/status && break
+            sleep 1
+          done
+
       - name: Run tests
         working-directory: tests/mytest
         env:
