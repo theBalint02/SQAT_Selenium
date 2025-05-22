@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HunBasketTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-05-22T15:23:07" hostname="b314a54e5870" time="33.552">
+<testsuite name="HunBasketTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-05-22T15:36:41" hostname="c9dd26de48d5" time="32.635">
   <properties/>
-  <testcase name="testHunBasketWebsite" classname="HunBasketTest" time="27.951"/>
-  <testcase name="testMultipleStaticPages" classname="HunBasketTest" time="5.601"/>
+  <testcase name="testHunBasketWebsite" classname="HunBasketTest" time="27.183"/>
+  <testcase name="testMultipleStaticPages" classname="HunBasketTest" time="5.452"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[May 22, 2025 5:23:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <system-err><![CDATA[May 22, 2025 5:36:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
-May 22, 2025 5:23:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 22, 2025 5:37:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 ]]></system-err>
 </testsuite>
