@@ -1,15 +1,11 @@
-name: Run Unit Tests
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
 jobs:
   test:
     runs-on: ubuntu-latest
-
+    services:
+      selenium:
+        image: selenium/standalone-chrome:latest
+        ports:
+          - 8081:8081
     steps:
       - uses: actions/checkout@v3
 
@@ -21,4 +17,7 @@ jobs:
 
       - name: Run tests
         working-directory: tests/mytest
+        env:
+          SELENIUM_HOST: localhost
+          SELENIUM_PORT: 8081
         run: gradle test
