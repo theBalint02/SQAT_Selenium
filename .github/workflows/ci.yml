@@ -13,7 +13,7 @@ jobs:
       selenium:
         image: selenium/standalone-chrome:latest
         ports:
-          - 8081:8081
+          - 4444:4444
     steps:
       - uses: actions/checkout@v3
 
@@ -26,6 +26,6 @@ jobs:
       - name: Run tests
         working-directory: tests/mytest
         env:
-          SELENIUM_HOST: localhost
-          SELENIUM_PORT: 8081
+          SELENIUM_HOST: selenium
+          SELENIUM_PORT: 4444
         run: gradle test
