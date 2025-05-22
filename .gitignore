@@ -1,5 +1,5 @@
 .idea
 .gradle
 build
-tests/mytests/.gradle/
-tests/mytests/build/
+tests/mytest/.gradle/
+tests/mytest/build/
