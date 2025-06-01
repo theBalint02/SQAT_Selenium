@@ -52,8 +52,6 @@ public class HunBasketTest {
         profilePage.clickHunBasket();
         assertTrue(driver.getTitle().contains("HUNBASKET"));
 
-        
-
         driver.navigate().back();
         assertFalse(driver.getTitle().contains("HUNBASKET"));
 
@@ -61,7 +59,6 @@ public class HunBasketTest {
         profilePage.logout();
 
         assertFalse(profilePage.isLogoutVisible());
-
         assertTrue(profilePage.getNameText().contains("Bel"));
         }
 
