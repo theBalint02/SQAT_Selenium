@@ -9,8 +9,8 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    public void open() {
-        driver.get("https://www.hunbasket.tv/");
+    public void open(String url) {
+        driver.get(url);
     }
 
     public String getTitle() {

@@ -1,4 +1,5 @@
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.openqa.selenium.TimeoutException;
 
 import org.openqa.selenium.*;
@@ -13,6 +14,7 @@ public class ProfilePage extends BasePage {
     private By nameDiv = By.xpath("/html/body/div/header/div/div/div[3]/div/a/div[2]");
     private By sendButton = By.xpath("/html/body/div/div[2]/div/div[2]/div/div[1]/div/form/button");
     private By success = By.xpath("//*[@id=\"toast-container\"]/div/div[2]");
+    
 
     public ProfilePage(WebDriver driver) {
         super(driver);
