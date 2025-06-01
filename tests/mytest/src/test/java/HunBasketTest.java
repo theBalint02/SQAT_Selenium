@@ -44,7 +44,7 @@ public class HunBasketTest {
         homePage.closeCookiePopup();
         homePage.clickLogin();
 
-        loginPage.login(loginPage.randomEmail(10), loginPage.randomPassword(10));
+        loginPage.login(LoginPage.randomEmail(10), LoginPage.randomPassword(10));
         assertTrue(loginPage.isFailed());
 
         loginPage.login(config.getValidEmail(), config.getValidPassword());
