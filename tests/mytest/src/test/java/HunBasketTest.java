@@ -38,13 +38,21 @@ public class HunBasketTest {
         homePage.closeCookiePopup();
         homePage.clickLogin();
 
+        loginPage.login(loginPage.randomEmail(10), loginPage.randomPassword(10));
+        assertTrue(loginPage.isFailed());
+
         loginPage.login("telkesbalint02@gmail.com", "teszt123?");
 
         profilePage.clickProfile();
         assertFalse(driver.getTitle().contains("HUNBASKET"));
 
+        profilePage.sendForm();
+        assertTrue(profilePage.isSuccess());
+
         profilePage.clickHunBasket();
         assertTrue(driver.getTitle().contains("HUNBASKET"));
+
+        
 
         driver.navigate().back();
         assertFalse(driver.getTitle().contains("HUNBASKET"));
